@@ -1,0 +1,66 @@
+body{
+  background-image: url(./img/44211.jpeg);
+}
+.orbita{
+width: 550px;
+height: 550px;
+border-radius: 50%;
+border: 2px solid rgb(143, 140, 140);
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+transform-style: preserve-3d;
+transform: rotateX(70deg) rotateY(0deg) rotateZ(0deg);
+}
+.earth{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+transform: rotateZ(0deg) rotateY(0deg)
+rotateX(-70deg)
+}
+.img-earth{
+  width: 400px;
+  height: 400px;
+}
+.moon{
+width: 70px;
+height: 70px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+transform: rotateZ(0deg) translate(272px) rotateY(90deg)
+rotateX(90deg);
+animation: move 4s infinite;
+animation-timing-function: linear;
+}
+.img-moon{
+  width: 70px;
+height: 70px;
+}
+
+@keyframes move{
+  0%{
+    transform: rotateZ(0deg) translate(272px) rotateY(90deg)
+    rotateX(90deg);
+  }
+  50%{
+    transform: rotateZ(180deg) translate(272px) rotateY(90deg)
+    rotateX(270deg);
+  }
+  100%{
+    transform: rotateZ(350deg) translate(272px) rotateY(90deg)
+    rotateX(460deg);
+  }
+}
